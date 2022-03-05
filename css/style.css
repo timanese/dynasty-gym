@@ -1,158 +1,195 @@
-/* always have this in your base css*/
+/* Tim Yang 3/03/22 */
 html {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 /* Always add margin 0 and padding 0 to body in the base css */
 body {
-    background-color: rgb(126, 126, 126);
-    color: #202020;
-    margin: 0;
-    padding: 0;
-    font: 'Open Sans';
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+  background-color: rgb(126, 126, 126);
+  color: #202020;
+  margin: 0;
+  padding: 0;
+  font: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-h1{
-    font-size: 100px;
-    line-height: 0.8;
-    text-shadow: 2px 2px #ff0000;
-
-
+h1 {
+  font-size: 100px;
+  line-height: 0.8;
+  text-shadow: 2px 2px #ff0000;
+  font-weight: bold;
 }
 h2 {
-    font-size: 45px;
-    text-align: center;
-    background-color: #202020;
-    color:white;
-    text-shadow: 2px 2px #ff0000;
+  font-size: 45px;
+  text-align: center;
+  background-color: #202020;
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+}
+h4 {
+  color: white;
+  text-shadow: 2px 2px #ff0000;
 }
 p {
-    font-size: 18px;
+  font-size: 18px;
+  font-family: Arial;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 footer {
-    background-color: black;
-    text-align: center;
-    color: white;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #33312E;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* height: 9%; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(180deg, red, yellow);
+
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 /* Style the links inside the navigation bar */
 .nav-bar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 /* Change the color of links on hover */
 .nav-bar a:hover {
-background-color: #ddd;
-color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Add a color to the active/current link */
 .nav-bar a:active {
-background-color: #ff0000;
-color: white;
+  background-color: #ff0000;
+  color: white;
 }
 
 .nav-bar img {
-    float: left;
+  float: left;
 }
 
 .page-opener {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #join-us-button {
-    background-color: #ca1111;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 45px;
+  background-color: #ca1111;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 45px;
+  animation-name: change-color;
+  animation-duration: 15s;
+}
+
+#join-us-button:hover {
+  cursor: pointer;
+  background-color: #202020;
+}
+
+/* Using Grid to fix layout */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+address {
+  text-align: center;
+  font-size: 30px;
+}
+
+#directions-button {
+  background-color: #ca1111;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 45px;
+}
+#direction-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* adding flex to website */
+#gym-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* change list style type */
+.hour-list {
+  list-style-type: square;
+}
+
+/* adding box shadow to elements */
+.location-grid img {
+  box-shadow: 5px 10px #ca1111;
+  transform: skewX(20deg);
+}
+#headshot-img {
+  box-shadow: 5px 10px #ca1111;
+}
+
+/* add an animation to change color of an element */
+@keyframes change-color {
+  from {
+    background-color: red;
   }
-
-  #join-us-button:hover {
-    cursor: pointer;
-    background-color: #202020;
+  to {
+    background-color: yellow;
   }
-
-
-  .location-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-  }
-
-  address {
-      text-align: center;
-      font-size: 30px;
-  }
-
-  #directions-button {
-    background-color: #ca1111;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 45px;
- }
- #direction-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
- }
-
- #header-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- #gym-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- .hour-list {
-    list-style-type: square;
- }
-
- .location-grid img {
-    box-shadow: 5px 10px #ca1111;
- }
+}
+/* change color if visted link */
+.map-link:visited {
+  color: green;
+}
+/* 
+change color of unvisted link */
+.map-link:link {
+  color: rgb(0, 140, 255);
+}
