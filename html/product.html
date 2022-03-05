@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dynasty Gym by Tim Yang">
+        <meta name="author" content="Tim Yang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Dynasty Gym - Product</title>
+    </head>
+	
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <img src="/images/finalLogo.png" alt="dragon logo of Dynasty Gym" width="70">
+                <a href="/index.html">Home</a>
+                <a href="/html/aboutUs.html">About Us</a>
+                <a href="/html/product.html">Memberships</a>
+            </nav>
+        </header>
+        <section class="memberships">
+            <h1>MEMBERSHIPS</h1>
+            <p>At Dynasty Gym we dont want money to be the issue you cant enjoy our facility! We offer 3 different memberships, so you can choose what is best for you!</p>
+
+            <!-- This is a table to showcase the different memberships and what each one offers -->
+            <table class="membership-table">
+                <tr>
+                    <th>Memberships</th>
+                    <th>Emperor Pack</th>
+                    <th>Shogun Pack</th>
+                    <th>Samurai Pack</th>
+                </tr>
+                <tr>
+                    <th>Prices</th>
+                    <td>$29.99</td>
+                    <td>$22.99</td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <th>Cardio, Weights, and Machines</th>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <th>24 hour access</th>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Group Fitness Classes</th>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Locker Room with shower</th>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <th>Tower service in locker room</th>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Hot Yoga</th>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Ride Classes</th>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Free T-Shirt</th>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- using different forms users can select a membership they want and provide email and phone number -->
+        <section class="join-us">
+            <h2>SIGN UP</h2>
+            <form>
+                <label>which membership would you like?</label>
+                <input list="membership-signup">
+                <datalist id="membership-signup">
+                    <option value="Emperor Pack">
+                    <option value="Samurai Pack">
+                    <option value="Shogun Pack">
+                </datalist>
+            </form>
+            <label>Enter your Email!</label>
+            <input type="email" id="email" required placeholder="name@domain.com">
+            <label>Enter your Phone number!</label>
+            <input type="tel" id="phone-number" required placeholder="(###)-###-####">
+            <button type="submit">JOIN NOW</button>
+            <form action="/html/product.html">
+                <input type="submit" value="Joining" />
+            </form>
+        </section>  
+        
+        <!-- footer for the bottom of the page -->
+        <footer>
+            <div class="footer-left">
+                <span>&copy; Dynasty Gym</span>
+                <p><b>ALL RIGHTS RESERVED</b></p>
+            </div>
+            <div class="footer-right">
+                <span>Own a Dynasty Gym |</span>
+                <span>Contact |</span>
+                <span>FAQ |</span>
+                <span>Terms of Use |</span>
+                <span>Privacy Policy |</span>
+                <span>Cookie Settings</span>
+            </div>
+        </footer>
+    
+    </body>	
+    
+</html>

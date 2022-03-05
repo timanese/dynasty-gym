@@ -1,0 +1,158 @@
+/* always have this in your base css*/
+html {
+    box-sizing: border-box;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* Always add margin 0 and padding 0 to body in the base css */
+body {
+    background-color: rgb(126, 126, 126);
+    color: #202020;
+    margin: 0;
+    padding: 0;
+    font: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 0.8;
+    text-shadow: 2px 2px #ff0000;
+
+
+}
+h2 {
+    font-size: 45px;
+    text-align: center;
+    background-color: #202020;
+    color:white;
+    text-shadow: 2px 2px #ff0000;
+}
+p {
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #33312E;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* height: 9%; */
+}
+/* Style the links inside the navigation bar */
+.nav-bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+/* Change the color of links on hover */
+.nav-bar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.nav-bar a:active {
+background-color: #ff0000;
+color: white;
+}
+
+.nav-bar img {
+    float: left;
+}
+
+.page-opener {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#join-us-button {
+    background-color: #ca1111;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 45px;
+  }
+
+  #join-us-button:hover {
+    cursor: pointer;
+    background-color: #202020;
+  }
+
+
+  .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  address {
+      text-align: center;
+      font-size: 30px;
+  }
+
+  #directions-button {
+    background-color: #ca1111;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 45px;
+ }
+ #direction-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+ }
+
+ #header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #gym-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .hour-list {
+    list-style-type: square;
+ }
+
+ .location-grid img {
+    box-shadow: 5px 10px #ca1111;
+ }
